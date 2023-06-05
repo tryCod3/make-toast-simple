@@ -1,0 +1,69 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+}
+
+svg{
+  cursor: pointer;
+}
+
+.svg {
+  &-size{
+    &-small{
+      width: 25px;
+    }
+    &-medium{
+      width: 35px;
+    }
+    &large{
+      width: 45px;
+    }
+  }
+}
+
+.flex{
+  display: flex;
+  &-row{
+    flex-direction: row;
+    &-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  &-col{
+    flex-direction: column;
+  }
+  &-space{
+    &-center{
+      justify-content: center;
+    }
+    &-between{
+      justify-content: space-between;
+    }
+  }
+  &-aligns{
+    &-center{
+      align-items: center;
+    }
+  }
+  &-1{
+    flex: 1;
+  }
+}
+
+.bg{
+  &-success {
+    background-color: #53b34c;
+  }
+  &-error {
+    background-color: #d37771;
+  }
+  &-info {
+    background-color: #4797ae;
+  }
+}
